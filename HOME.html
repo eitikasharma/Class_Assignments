@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+<section>
   <head>
     <title>Sports Complex</title>
     <link rel="stylesheet" href="CssHome.css">
+    <link rel="stylesheet" href="testcss.css">
+    <link rel="stylesheet" href="slideshowcss.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
+</section>
+
   <body>
 
     <!--Header Start-->
@@ -14,7 +24,7 @@
                 <img class="phonelogo" src="Images\PhoneLogo.png">
                       <div class="right">
                         <br>
-                              <b>1800-1881-1221</b><br><br><br><br>
+                              <b>1800-1881-1221</b><br><br>
                               <b>sportscomplexindia@gmail.com</b>
 
                       </div>
@@ -33,7 +43,7 @@
         <a class="navlinks" href="HOME">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         <a class="navlinks" href="Facilities">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FACILTIES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         <a class="navlinks" href="Testimonials">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TESTIMONIALS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-        <a class="navlinks" href="Bookings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOKINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <!--<a class="navlinks" href="Bookings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOKINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
         <a class="navlinks" href="ContactUs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         <a class="navlinks" href="AboutUs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </CENTER>
@@ -42,8 +52,76 @@
 
 <!--SlideShow-->
 <section>
-      <div>
-          IMAGES
+      <div class="SlideShow">
+            <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\1.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\2.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\3.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\4.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\5.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\6.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\7.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\8.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\9.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\10.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\11.jpe" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                      <img src="Images\SlideShow\12.jpe" style="width:100%">
+                    </div>
+
+
+            </div>
+            <div style="text-align:center">
+              <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+              <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+              <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+            </div>
+            <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+
       </div>
 </section>
 
@@ -57,21 +135,138 @@
 </section
 
 <!--Bookings-->
-<section>
+<!--<section>
       <div class="Bookings">
           BOOKINGS
-          <br><br>
           <a href="HOME.html">back to top</a>
       </div>
-</section>
+</section>-->
 
 <!--Testimonials-->
 <section>
       <div class="Testimonials">
-          <p class="testimonialsp1">WHAT GREAT PLAYERS ARE SAYING</p>
-          <hr class="testimonialshr">
-          <br><br>
-          <a href="HOME.html">back to top</a>
+          <div class="container">
+<div class="row">
+ <div class="col-sm-12">
+   <p class="testimonialsp1">WHAT GREAT PLAYERS ARE SAYING</p>
+   <hr class="testimonialshr">
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!-- Carousel indicators -->
+     <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+     </ol>
+     <!-- Wrapper for carousel items -->
+     <div class="carousel-inner">
+       <div class="item carousel-item active">
+         <div class="row">
+           <div class="col-sm-6">
+             <div class="media">
+               <div class="media-left d-flex mr-3">
+                 <a href="#">
+                   <img src="/examples/images/clients/1.jpg" alt="">
+                 </a>
+               </div>
+               <div class="media-body">
+                 <div class="testimonial">
+                   <p>Never say never because limits, likes fears, are often just ILLUSIONS.</p>
+                   <p class="overview"><b>-Michael Jordan</b></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-sm-6">
+             <div class="media">
+               <div class="media-left d-flex mr-3">
+                 <a href="#">
+                   <img src="/examples/images/clients/2.jpg" alt="">
+                 </a>
+               </div>
+               <div class="media-body">
+                 <div class="testimonial">
+                   <p>If you train hard, you'll not only be hard, you'll be hard to beat. </p>
+                   <p class="overview"><b>-Herschel Walker</b></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="item carousel-item">
+         <div class="row">
+           <div class="col-sm-6">
+             <div class="media">
+               <div class="media-left d-flex mr-3">
+                 <a href="#">
+                   <img src="/examples/images/clients/3.jpg" alt="">
+                 </a>
+               </div>
+               <div class="media-body">
+                 <div class="testimonial">
+                   <p>If you believe it, the mind can achieve it. </p>
+                   <p class="overview"><b>-Ronnie Lott</b></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-sm-6">
+             <div class="media">
+               <div class="media-left d-flex mr-3">
+                 <a href="#">
+                   <img src="/examples/images/clients/4.jpg" alt="">
+                 </a>
+               </div>
+               <div class="media-body">
+                 <div class="testimonial">
+                   <p>If you are afraid of failure you don't deserve to be Successful.</p>
+                   <p class="overview"><b>-Chales Barkley</b></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="item carousel-item">
+         <div class="row">
+           <div class="col-sm-6">
+             <div class="media">
+               <div class="media-left d-flex mr-3">
+                 <a href="#">
+                   <img src="/examples/images/clients/5.jpg" alt="">
+                 </a>
+               </div>
+               <div class="media-body">
+                 <div class="testimonial">
+                   <p>Most kids would be like, "My dad's never around." ,but I saw it as a positive. He was out there working to provide for me. </p>
+                   <p class="overview"><b>Gilbert Asens</b></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-sm-6">
+             <div class="media">
+               <div class="media-left d-flex mr-3">
+                 <a href="#">
+                   <img src="/examples/images/clients/6.jpg" alt="">
+                 </a>
+               </div>
+               <div class="media-body">
+                 <div class="testimonial">
+                   <p>Today I will do what others won't, so tomorrow I can accomplish what others can't.</p>
+                   <p class="overview"><b>Jerry Rice</b></p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+          </div>
+        <a href="HOME.html">back to top</a>
       </div>
 </section>
 
@@ -113,7 +308,7 @@
           <a class="footlinks" href="HOME">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <a class="footlinks" href="Facilities">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FACILTIES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <a class="footlinks" href="Testimonials">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TESTIMONIALS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <a class="footlinks" href="Bookings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOKINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <!--<a class="footlinks" href="Bookings">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BOOKINGS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
           <a class="footlinks" href="ContactUs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTACT US &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
           <a class="footlinks" href="AboutUs">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABOUT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </CENTER>
