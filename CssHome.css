@@ -4,6 +4,9 @@ body
   //background-color: #ffffe6;
 }
 
+
+
+
 .top
 {
   width: auto;
@@ -28,6 +31,10 @@ body
   height: 50px;
 }
 
+
+
+
+
 .links
 {
   background-color: #262626;
@@ -44,11 +51,19 @@ body
   font-size:40;
 }
 
+
+
+
+
+
 .Facilities
 {
   margin:10px;
   border: 2px solid green;
 }
+
+
+
 
 
 .Bookings
@@ -57,17 +72,75 @@ body
   border: 2px solid yellow;
 }
 
+
+
+
+
+.SlideShow
+{
+  height: 500px;
+  border:2px solid black;
+}
+
+
+
+
+
+
+
 .Testimonials
 {
   margin:10px;
-  border: 2px solid blue;
+  padding:10px;
+  background-color:#eff5f5;
 }
+.testimonialsp1
+{
+  font-size:40px;
+  font-family: monospace;
+  font-height:20px;
+  color: #800040;
+  font-weight:bolder;
+  text-align:center;
+}
+.testimonialshr
+{
+ width: 40%;
+ border:3px solid #e0e0d1;
+}
+
+
+
+
 
 .ContactUs
 {
   margin:10px;
-  border: 2px solid pink;
+  padding:10px;
+  background-color: #e6fff3;
 }
+.contactusp1
+{
+  font-size:40px;
+  font-family: monospace;
+  font-height:20px;
+  color: #006680;
+  font-weight:bolder;
+  text-align:center;
+}
+.contactusdata
+{
+  font-size:22px;
+  LINE-HEIGHT:30px;
+  font-family:serif;
+  color: #0086b3;
+  text-align:center;
+}
+
+
+
+
+
 
 .AboutUs
 {
@@ -79,7 +152,6 @@ body
 {
   font-size:40px;
   font-family: monospace;
-  font-height:20px;
   color:#264d00;
   font-weight:bolder;
   text-align:center;
@@ -87,10 +159,15 @@ body
 .aboutusp
 {
   font-size:18px;
+    LINE-HEIGHT:25px;
   font-family:serif;
   color: #008040;
   text-align:center;
 }
+
+
+
+
 
 
 
