@@ -1,0 +1,112 @@
+html
+{
+  margin:10px;
+  background-color: #e8e3e3;
+}
+
+.top
+{
+  margin:10px;
+  border:2px solid black;
+  width: auto;
+
+}
+
+.pagelogo
+{
+  padding: 5px;
+  align:left;
+  width: 100px;
+  height: 100px;
+}
+
+.right
+{
+  float:right;
+}
+
+.phonelogo
+{
+  align:right;
+  width: 50px;
+  height: 50px;
+
+}
+
+.maillogo
+{
+  align:right;
+  width: 50px;
+  height: 50px;
+}
+
+.links
+{
+  background-color: #a38f8f;
+  margin:10px;
+  width:auto;
+}
+
+.navlinks
+{
+  text-decoration: none;
+  color:#ffffff;
+  font-size:40;
+}
+
+.Facilities
+{
+  margin:10px;
+  border: 2px solid green;
+
+}
+
+
+.Bookings
+{
+  margin:10px;
+  border: 2px solid yellow;
+
+}
+
+.Testimonials
+{
+  margin:10px;
+  border: 2px solid blue;
+
+}
+
+.ContactUs
+{
+  margin:10px;
+  border: 2px solid pink;
+
+}
+
+.AboutUs
+{
+  margin:10px;
+  border: 2px solid red;
+
+}
+
+.foot
+{
+    background-color: black;
+    height: 200px;
+    width:auto;
+}
+
+table
+{
+align:center;
+
+}
+
+.footlinks
+{
+  color:white;
+  font-size: 20px;
+  font-height:10px;
+  text-decoration: none;
+}
