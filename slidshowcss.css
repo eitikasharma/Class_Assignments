@@ -15,10 +15,21 @@
   to {opacity: 1}
 }
 
+.imgslide
+{
+  height: 100px;
+  weight:auto;
+}
+
 .active {
   background-color: #717171;
 }
-
+.slideshow-container {
+  width: 100px;
+  height:200px;
+  position: relative;
+  margin: auto;
+}
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
