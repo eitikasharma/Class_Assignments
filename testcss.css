@@ -4,7 +4,7 @@
 	padding: 0 70px;
 }
 .carousel .item {
-	color: #99004d;
+	color: #cc0066;
 	overflow: hidden;
     font-weight: bold;
     min-height: 120px;
@@ -34,7 +34,7 @@
 .carousel .overview b {
 	text-transform: uppercase;
     font-size:15px;
-	color: #ffcce6;
+	color: #ff66b5;
 }
 .carousel .carousel-indicators {
 	bottom: -40px;
